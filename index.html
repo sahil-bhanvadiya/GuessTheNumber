@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body background="bg.jpg" style="background-position: center; background-repeat: no-repeat;">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Guess the Number!</a>
+        <a class="navbar-brand" href="#">By @sahil</a>
+      </nav>
+    <div class="container">
+
+      <div class="left" id="ld" style="font-size: 146px; text-align: center;">
+      </div>
+
+      <div class="center" id="cd">
+        <div class="my-2">
+        <img src="guess.jpeg" alt="image" id="image" style="width: 300px" />
+          <p>
+            I am thinking of a number between 1 and 100. Can you guess what it
+            is?
+          </p>
+        </div>
+<hr>
+        <div>
+          Enter Number : 
+          <input type="number" min="1" max="100" id="guess" value="1" style="height: 55px;
+          width: 80px;
+          font-size: 30px;
+          text-align: center;
+          background: rgba(255, 255, 255, 0.603);" /> between 1 to 100
+
+          <br>
+          
+          <button class="glow-on-hover my-2" id="submitGuess" type="button" style="font-size: larger;">Check</button>
+          <div class="middle">
+            <a href="" id="bn" class="btn btn1" onclick="location.reload()">Play Again</a>
+          </div>
+        
+          <p id="feedback"></p>
+
+          <div>
+            <h2 id="won"></h1>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="right" id="rd"  style="font-size: 146px; text-align: center;">
+      </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p>© 2021 copyright reserved</p>
+      </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
